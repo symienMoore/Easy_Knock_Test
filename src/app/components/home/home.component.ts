@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.service.getData().subscribe (data => {
+      //console logging the data to ensure data is being sent.
       console.log(data);
     })
   }

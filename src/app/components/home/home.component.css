@@ -1,0 +1,35 @@
+h1{
+    font-family: montserrat;
+    color: rgb(95, 60, 247);
+}
+
+input{
+    width: 600px;
+    height: 20px;
+    color: rgb(95, 60, 247);
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+button{
+    width: 90px;
+    height: 40px;
+    margin-top: 50px;
+    padding: 5px;
+    background: rgb(95, 60, 247);
+    color: white;
+    outline: none;
+    font-family: montserrat;
+    border-color: rgb(95, 60, 247);
+    border-radius: 5px;
+    box-shadow: 0 15px 40px rgb(158, 137, 250);
+    
+}
+
+button:hover{
+    cursor: pointer;
+    
+}
+
