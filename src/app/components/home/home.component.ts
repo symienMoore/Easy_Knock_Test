@@ -13,7 +13,9 @@ public Data: any[] = [];
 
   ngOnInit() {
     this.service.getData()
-    .subscribe(res => this.Data.push(res.value));
-    console.log(this.Data);
+    .subscribe(data => {
+      this.Data = data.value;
+      console.log(this.Data);
+    });
   }
 }
