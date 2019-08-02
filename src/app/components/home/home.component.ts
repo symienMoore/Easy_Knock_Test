@@ -9,11 +9,11 @@ export class HomeComponent implements OnInit {
 
   constructor(private service: AssociationAmenitiesService) { }
 
-  ngOnInit() {
-    this.service.getData().subscribe (data => {
-      //console logging the data to ensure data is being sent.
-      console.log(data);
-    })
-  }
+public Data: any[] = [];
 
+  ngOnInit() {
+    this.service.getData()
+    .subscribe(res => this.Data.push(res.value));
+    console.log(this.Data);
+  }
 }
