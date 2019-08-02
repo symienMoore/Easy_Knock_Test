@@ -7,10 +7,6 @@
 <button>see all</button>
 </div>
 
-<div>
-  <ul class="objects">
-    <li *ngFor="let data of Data">
-      
-    </li>
-  </ul>
- </div>
+<div *ngFor="let data of Data">
+<h3>{{ data.BuildingName }}</h3>
+</div>

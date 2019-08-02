@@ -13,7 +13,7 @@ public Data: any[] = [];
 
   ngOnInit() {
     this.service.getData()
-    .subscribe(data => {
+    .subscribe((data) => {
       this.Data = data.value;
       console.log(this.Data);
     });
