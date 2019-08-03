@@ -15,7 +15,8 @@ import { AssociationAmenitiesService } from './services/association-amenities.se
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [AssociationAmenitiesService],
   bootstrap: [AppComponent]

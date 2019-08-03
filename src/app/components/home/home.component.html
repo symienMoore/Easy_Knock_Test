@@ -1,8 +1,8 @@
 <div>
 <h1>Welcome to the easy-knock test!</h1>
 <form action="">
-  <input type="text" placeholder="Search amenities..."> <br>
-  <button>search</button>
+  <input type="text" placeholder="Search amenities..." [(ngModel)]="query" name="query"> <br>
+  <button (click)="getAmenity(query)">search</button>
 </form>
 </div>
 

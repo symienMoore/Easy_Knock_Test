@@ -9,13 +9,22 @@ export class HomeComponent implements OnInit {
 
   constructor(private service: AssociationAmenitiesService) { }
 
-public Data: any[] = [];
+ Data: any[] = [];
+ query: any;
+ amenities: any[] = [];
 
   ngOnInit() {
     this.service.getData()
     .subscribe((data) => {
       this.Data = data.value;
-      console.log(this.Data);
+      console.log(JSON.stringify(data));
+    });
+  }
+
+  // will query api for amenity input
+  getAmenity() {
+    this.service.getByAmenity(this.query).subscribe(res => {
+      this.amenities = res;
     });
   }
 }
