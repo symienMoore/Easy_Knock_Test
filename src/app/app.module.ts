@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { AssociationAmenitiesService } from './services/association-amenities.service';
-
+import { Ng2SearchPipeModule } from 'ng2-search-filter'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +16,8 @@ import { AssociationAmenitiesService } from './services/association-amenities.se
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    Ng2SearchPipeModule
   ],
   providers: [AssociationAmenitiesService],
   bootstrap: [AppComponent]

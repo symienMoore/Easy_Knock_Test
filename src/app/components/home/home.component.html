@@ -6,7 +6,7 @@
 </form>
 </div>
 
-<div *ngFor="let data of Data">
+<div *ngFor="let data of Data | filter:query">
 <h3>{{ data.BuildingName }}</h3>
 <p>{{ data.AssociationAmenities }}</p>
 </div>
